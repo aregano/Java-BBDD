@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Alvaro\Java-BBDD\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1018210729.index
+\AndresBank\src\main\java
+C:\Alvaro\Java-BBDD\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\972980115.index
+\HelloMVC\src

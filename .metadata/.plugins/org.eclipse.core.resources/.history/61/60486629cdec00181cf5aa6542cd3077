@@ -1,0 +1,40 @@
+package com.alvaro.database;
+
+import java.util.ArrayList;
+
+import com.alvaro.models.Cliente;
+import com.alvaro.models.Cuenta;
+import com.alvaro.models.Nomina;
+
+
+public class BBDD {
+	
+	public static BBDD instance = null;
+	
+	public ArrayList<Cliente> cliente = new ArrayList<Cliente>();
+	
+	public ArrayList<Cuenta> cuenta = new ArrayList<Cuenta>();
+	
+	public ArrayList<Nomina> nomina = new ArrayList<Nomina>();
+	
+	
+	public static final BBDD getInstance() {
+		if(instance==null) instance = new BBDD();
+		return instance;
+	}
+	
+	private BBDD() {
+		this.fillClientes();
+		this.fillCuentas();
+		this.fillNominas();
+		this.relacionesCCN();
+	}
+	private boolean fillClientes() {
+		cliente.add(new Cliente(1, "Pepe", "12345678L", "ppp", null, null));
+		cliente.add(new Cliente(2, "Pepa", "12345678P", "ppp", null, null));
+		cliente.add(new Cliente(3, "Pepi", "12345678T", "ppp", null, null));
+		
+		return true;
+	}
+	
+}

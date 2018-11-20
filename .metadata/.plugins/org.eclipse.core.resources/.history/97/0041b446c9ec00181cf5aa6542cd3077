@@ -1,0 +1,10 @@
+package com.alvaro.models;
+
+public class Nomina {
+
+	private int nid;
+	private String nombre;
+	private double valor;
+	
+	
+}

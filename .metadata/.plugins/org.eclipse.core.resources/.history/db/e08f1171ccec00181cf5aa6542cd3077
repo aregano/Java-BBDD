@@ -1,0 +1,18 @@
+package com.alvaro.database;
+
+import java.util.ArrayList;
+
+import com.alvaro.models.Cliente;
+import com.alvaro.models.Cuenta;
+import com.alvaro.models.Nomina;
+
+
+public class BBDD {
+	
+	public ArrayList<Cliente> cliente = new ArrayList<Cliente>();
+	
+	public ArrayList<Cuenta> cuenta = new ArrayList<Cuenta>();
+	
+	public ArrayList<Nomina> nomina = new ArrayList<Nomina>();
+	
+}
