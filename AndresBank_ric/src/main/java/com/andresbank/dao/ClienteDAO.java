@@ -62,4 +62,41 @@ public class ClienteDAO {
 		return resCliente;
 
 	}
+
+	public Cliente getUserByDNI(String dnisess) throws SQLException {
+		
+		Cliente resCliente=null;
+		
+		String url = "jdbc:mysql://localhost/cliente";
+			
+		Connection conn = DriverManager.getConnection(url, "root", "root");
+					
+		String sql = "SELECT uid, nombre, dni, pin, nomina FROM cliente WHERE dni=?";
+		
+		PreparedStatement psmt = conn.prepareStatement(sql);
+		psmt.setString(1, dnisess);
+		
+		ResultSet rs = psmt.executeQuery();
+		
+		System.out.println("ResultSet; "+rs);
+			
+		if(rs.next()) {
+			System.out.println("ResultSet:"+rs.getInt(1)+": "+rs.getString(2));
+			resCliente = new Cliente(
+					rs.getInt(1), 
+					rs.getString(2), 
+					rs.getString(3), 
+					rs.getString(4)
+					);
+			
+		}
+		
+		rs.close();
+		psmt.close();
+		conn.close();
+		
+		return resCliente;
+
+	}
+		
 }

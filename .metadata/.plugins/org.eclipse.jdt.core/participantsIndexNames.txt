@@ -3,5 +3,7 @@ C:\Alvaro\Java-BBDD\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\101821
 \AndresBank\src\main\java
 C:\Alvaro\Java-BBDD\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\972980115.index
 \HelloMVC\src
+C:\Alvaro\Java-BBDD\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2753873734.index
+\AndresBank_ric\src\main\java
 C:\Alvaro\Java-BBDD\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2146072114.index
 \AndresBank_ric\src\main\java

@@ -8,6 +8,7 @@ import java.sql.SQLException;
 
 import com.andresbank.models.Cliente;
 import com.andresbank.models.Cuenta;
+import com.mysql.jdbc.Statement;
 
 public class CuentaDAO {
 
@@ -28,7 +29,7 @@ public class CuentaDAO {
 	public Cuenta getCuentaByCid(int cidrec) throws SQLException {
 		Cuenta resCuenta=null;
 		
-		String url = "jdbc:mysql://localhost/cuenta";
+		String url = "jdbc:mysql://localhost/cliente";
 		
 // 		Crear driver
 		
@@ -62,5 +63,49 @@ public class CuentaDAO {
 		
 		return resCuenta;
 
+	}
+
+	public int crearCuenta(Cuenta cuenta, Cliente cliente) throws SQLException {
+		int cidres = 0;
+		
+		String url = "jdbc:mysql://localhost/cliente";
+
+		Connection conn = DriverManager.getConnection(url, "root", "root");
+		
+		String sql = "INSERT INTO `cuenta` ( `nombre`, `numero`, `saldo`) VALUES (?, ?, ?)";
+//	Para que te devuelva las claves generadas de la base de datos
+		PreparedStatement psmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+		psmt.setString(1, cuenta.getNombre());
+		psmt.setString(2, cuenta.getNumero());
+		psmt.setDouble(3, cuenta.getSaldo());
+		
+		
+		psmt.executeUpdate();
+		
+			
+		ResultSet rs = psmt.getGeneratedKeys();
+		
+		if(rs.next()) {
+			cidres = rs.getInt(1);
+		}
+		
+		psmt.close();
+		rs.close();
+		
+//	INSERTAR CLIENTE-CUENTA
+		String sql1 = "INSERT INTO `cliente_cuenta` ( `cliente`, `cuenta`) VALUES (?, ?)";
+		psmt = conn.prepareStatement(sql1);
+		psmt.setInt(1,  cliente.getUid());
+		psmt.setInt(2, cidres);
+		
+		psmt.executeUpdate();
+		psmt.close();
+		
+		conn.close();
+		
+		System.out.println("ResultSet; "+rs);
+		
+		return cidres;
+		
 	}
 }

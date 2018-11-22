@@ -21,6 +21,20 @@
 		<servlet-class>com.andresbank.controllers.CuentaServlet
 		</servlet-class>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>CrearCuenta</display-name>
+		<servlet-name>CrearCuenta</servlet-name>
+		<servlet-class>com.andresbank.controllers.CrearCuenta</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>CrearCuentaServlet</display-name>
+		<servlet-name>CrearCuentaServlet</servlet-name>
+		<servlet-class>com.andresbank.controllers.CrearCuentaServlet</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>LoginServlet</servlet-name>
 		<url-pattern>/login</url-pattern>
@@ -32,5 +46,13 @@
 	<servlet-mapping>
 		<servlet-name>CuentaServlet</servlet-name>
 		<url-pattern>/cuenta</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CrearCuenta</servlet-name>
+		<url-pattern>/CrearCuenta</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CrearCuentaServlet</servlet-name>
+		<url-pattern>/crearcuenta</url-pattern>
 	</servlet-mapping>
 </web-app>
