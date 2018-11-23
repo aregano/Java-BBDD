@@ -23,89 +23,161 @@ public class CuentaDAO {
 
 	private CuentaDAO() throws Exception {
 		Class.forName("com.mysql.jdbc.Driver").newInstance();
-		
+
 	}
-	
+
 	public Cuenta getCuentaByCid(int cidrec) throws SQLException {
-		Cuenta resCuenta=null;
-		
+		Cuenta resCuenta = null;
+
 		String url = "jdbc:mysql://localhost/cliente";
-		
+
 // 		Crear driver
-		
+
 		Connection conn = DriverManager.getConnection(url, "root", "root");
-				
+
 //		java.sql establecer que statements poner dentro del driver. Especificar los campos en SELECT para saber encontrarlos
-		
+
 		String sql = "SELECT cid, nombre, numero, saldo FROM cuenta WHERE cid=?";
-		
+
 		PreparedStatement psmt = conn.prepareStatement(sql);
 		psmt.setInt(1, cidrec);
-		
+
 		ResultSet rs = psmt.executeQuery();
-		
-		System.out.println("ResultSet; "+rs);
-		
+
+		System.out.println("ResultSet; " + rs);
+
 //		usamos un while porque desconocemos el tamaño de los datos que vamos a recibir, y pedimos los campos con getInt/getString etc.
-		
-		while(rs.next()) {
-			System.out.println("ResultSet:"+rs.getInt(1));
-			resCuenta = new Cuenta(
-					rs.getInt(1), 
-					rs.getString(2), 
-					rs.getString(3), 
-					rs.getDouble(4));
+
+		while (rs.next()) {
+			System.out.println("ResultSet:" + rs.getInt(1));
+			resCuenta = new Cuenta(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getDouble(4));
 		}
-		
+
 		rs.close();
 		psmt.close();
+
 		conn.close();
-		
+
 		return resCuenta;
 
 	}
 
 	public int crearCuenta(Cuenta cuenta, Cliente cliente) throws SQLException {
 		int cidres = 0;
-		
+
 		String url = "jdbc:mysql://localhost/cliente";
 
 		Connection conn = DriverManager.getConnection(url, "root", "root");
-		
-		String sql = "INSERT INTO `cuenta` ( `nombre`, `numero`, `saldo`) VALUES (?, ?, ?)";
-//	Para que te devuelva las claves generadas de la base de datos
-		PreparedStatement psmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+
+		conn.setAutoCommit(false);
+
+		try {
+			String sql = "INSERT INTO `cuenta` ( `nombre`, `numero`, `saldo`) VALUES (?, ?, ?)";
+//	Para que te devuelva las claves generadas de la base de datos al DAO
+			PreparedStatement psmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+			psmt.setString(1, cuenta.getNombre());
+			psmt.setString(2, cuenta.getNumero());
+			psmt.setDouble(3, cuenta.getSaldo());
+
+			psmt.executeUpdate();
+
+			ResultSet rs = psmt.getGeneratedKeys();
+
+			if (rs.next()) {
+				cidres = rs.getInt(1);
+			}
+
+			psmt.close();
+			rs.close();
+
+//	INSERTAR CLIENTE-CUENTA
+			String sql1 = "INSERT INTO `cliente_cuenta` ( `cliente`, `cuenta`) VALUES (?, ?)";
+			psmt = conn.prepareStatement(sql1);
+			psmt.setInt(1, cliente.getUid());
+			psmt.setInt(2, cidres);
+
+			psmt.executeUpdate();
+			psmt.close();
+
+			conn.commit();
+			conn.close();
+		} catch (Exception e) {
+			System.out.println("Excepcion tx: " + e.getMessage());
+			conn.rollback();
+		}
+
+		return cidres;
+
+	}
+
+	public boolean editarCuenta(Cuenta cuenta) throws SQLException {
+
+		boolean todoOk = false;
+
+		String url = "jdbc:mysql://localhost/cliente";
+
+		Connection conn = DriverManager.getConnection(url, "root", "root");
+
+		String sql = "UPDATE cuenta SET `nombre`=?,`numero`=?,`saldo`=? WHERE cid=?";
+		// Para que te devuelva las claves generadas de la base de datos al DAO
+		PreparedStatement psmt = conn.prepareStatement(sql);
 		psmt.setString(1, cuenta.getNombre());
 		psmt.setString(2, cuenta.getNumero());
 		psmt.setDouble(3, cuenta.getSaldo());
-		
-		
+		psmt.setInt(4, cuenta.getCid());
+
 		psmt.executeUpdate();
-		
-			
-		ResultSet rs = psmt.getGeneratedKeys();
-		
-		if(rs.next()) {
-			cidres = rs.getInt(1);
-		}
-		
+		todoOk = true;
+
 		psmt.close();
-		rs.close();
-		
-//	INSERTAR CLIENTE-CUENTA
-		String sql1 = "INSERT INTO `cliente_cuenta` ( `cliente`, `cuenta`) VALUES (?, ?)";
-		psmt = conn.prepareStatement(sql1);
-		psmt.setInt(1,  cliente.getUid());
-		psmt.setInt(2, cidres);
-		
-		psmt.executeUpdate();
-		psmt.close();
-		
+
 		conn.close();
+
+		return todoOk;
+
+	}
+
+	public boolean borrarCuenta(Cuenta cuenta) throws SQLException {
+
+		boolean todoOk = false;
+
+		String url = "jdbc:mysql://localhost/cliente";
+
+		Connection conn = DriverManager.getConnection(url, "root", "root");
+
+		conn.setAutoCommit(false);
+
+		try {
+			String sql = "DELETE FROM `cliente_cuenta` WHERE `cliente_cuenta`.`cuenta` = ?";
+			// Para que te devuelva las claves generadas de la base de datos al DAO
+			
+			PreparedStatement psmt = conn.prepareStatement(sql);
+			psmt.setInt(1, cuenta.getCid());
+
+			psmt.executeUpdate();
+
+			psmt.close();
+
+			sql = "DELETE FROM cuenta WHERE cid=?";
+			psmt = conn.prepareStatement(sql);
+			psmt.setInt(1, cuenta.getCid());
+
+			psmt.executeUpdate();
+			psmt.close();
+			
+			conn.commit();
+	
+			todoOk = true;
+			System.out.println("Punto1");
+			
+		} catch (Exception e) {
+			System.out.println("Excepcion tx: " + e.getMessage());
+			conn.rollback();
+		}finally {
 		
-		System.out.println("ResultSet; "+rs);
-		
-		return cidres;
-		
+		conn.close();}
+
+		return todoOk;
+
 	}
 }

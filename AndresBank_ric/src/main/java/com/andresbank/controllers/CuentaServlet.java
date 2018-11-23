@@ -50,6 +50,10 @@ public class CuentaServlet extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
+		String nombrerecibido = request.getParameter("nombre");
+		String saldorecibido = request.getParameter("saldo");
+		String numerorecibido = request.getParameter("numero");
 
 		doGet(request, response);
 	}

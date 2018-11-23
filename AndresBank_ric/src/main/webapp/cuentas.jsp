@@ -15,6 +15,8 @@
 	<ul>
 	<c:forEach var="unaCuenta" items="${lista_cuentas}">
 		<li>${unaCuenta.cid} |${unaCuenta.nombre}| ${unaCuenta.numero} | ${unaCuenta.saldo} </li>
+		<a href="./editarcuenta?cid=${unaCuenta.cid}">Editar</a>
+		<a href="./borrarcuenta?cid=${unaCuenta.cid}">Borrar</a>		
 	</c:forEach>
 	</ul>
 	
