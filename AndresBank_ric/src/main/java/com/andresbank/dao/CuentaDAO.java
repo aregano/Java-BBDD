@@ -10,7 +10,9 @@ import com.andresbank.models.Cliente;
 import com.andresbank.models.Cuenta;
 import com.mysql.jdbc.Statement;
 
-public class CuentaDAO {
+public class CuentaDAO extends DAO {
+	
+//	extends usa la opcion de "herencia" para usar, en este caso los drivers y el url, de DAO.java. 
 
 	private static CuentaDAO instance = null;
 
@@ -22,18 +24,16 @@ public class CuentaDAO {
 	}
 
 	private CuentaDAO() throws Exception {
-		Class.forName("com.mysql.jdbc.Driver").newInstance();
-
 	}
 
 	public Cuenta getCuentaByCid(int cidrec) throws SQLException {
 		Cuenta resCuenta = null;
 
-		String url = "jdbc:mysql://localhost/cliente";
-
 // 		Crear driver
 
-		Connection conn = DriverManager.getConnection(url, "root", "root");
+//		para no estar llamando a la conexion todo el rato. Generar un Pool de conexiones en DAO
+//		Connection conn = DriverManager.getConnection(url, "root", "root");
+		Connection conn = datasource.getConnection();
 
 //		java.sql establecer que statements poner dentro del driver. Especificar los campos en SELECT para saber encontrarlos
 
@@ -65,9 +65,7 @@ public class CuentaDAO {
 	public int crearCuenta(Cuenta cuenta, Cliente cliente) throws SQLException {
 		int cidres = 0;
 
-		String url = "jdbc:mysql://localhost/cliente";
-
-		Connection conn = DriverManager.getConnection(url, "root", "root");
+		Connection conn = datasource.getConnection();
 
 		conn.setAutoCommit(false);
 
@@ -114,9 +112,7 @@ public class CuentaDAO {
 
 		boolean todoOk = false;
 
-		String url = "jdbc:mysql://localhost/cliente";
-
-		Connection conn = DriverManager.getConnection(url, "root", "root");
+		Connection conn = datasource.getConnection();
 
 		String sql = "UPDATE cuenta SET `nombre`=?,`numero`=?,`saldo`=? WHERE cid=?";
 		// Para que te devuelva las claves generadas de la base de datos al DAO
@@ -141,9 +137,7 @@ public class CuentaDAO {
 
 		boolean todoOk = false;
 
-		String url = "jdbc:mysql://localhost/cliente";
-
-		Connection conn = DriverManager.getConnection(url, "root", "root");
+		Connection conn = datasource.getConnection();
 
 		conn.setAutoCommit(false);
 

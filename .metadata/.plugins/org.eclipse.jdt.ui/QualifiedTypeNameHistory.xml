@@ -7,9 +7,15 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="com.andresbank.dao.CuentasDAO"/>
-<fullyQualifiedTypeName name="com.andresbank.dao.CuentaDAO"/>
 <fullyQualifiedTypeName name="com.mysql.jdbc.Statement"/>
-<fullyQualifiedTypeName name="com.andresbank.models.Cuenta"/>
 <fullyQualifiedTypeName name="com.andresbank.models.Cliente"/>
+<fullyQualifiedTypeName name="com.andresbank.models.Cuenta"/>
+<fullyQualifiedTypeName name="com.andresbank.dao.EditarCuentaDAO"/>
+<fullyQualifiedTypeName name="com.andresbank.dao.CuentaDAO"/>
+<fullyQualifiedTypeName name="javax.naming.InitialContext"/>
+<fullyQualifiedTypeName name="javax.naming.Context"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="com.andresbank.dao.Test"/>
+<fullyQualifiedTypeName name="org.junit.BeforeClass"/>
 <fullyQualifiedTypeName name="com.andresbank.dao.ClienteDAO"/>
 </qualifiedTypeNameHistroy>

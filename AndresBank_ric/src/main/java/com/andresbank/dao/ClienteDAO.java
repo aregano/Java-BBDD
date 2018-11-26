@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 import com.andresbank.models.Cliente;
 
-public class ClienteDAO {
+public class ClienteDAO extends DAO {
 
 	private static ClienteDAO instance = null;
 	
@@ -26,11 +26,14 @@ public class ClienteDAO {
 	public Cliente getUserByDNIAndPass(String dnirec, String passrec) throws SQLException {
 		Cliente resCliente=null;
 		
-		String url = "jdbc:mysql://localhost/cliente";
+		
+		
+//		String url = "jdbc:mysql://localhost/cliente";
 		
 // 		Crear driver
 		
-		Connection conn = DriverManager.getConnection(url, "root", "root");
+//		Connection conn = DriverManager.getConnection(url, "root", "root");
+		Connection conn = datasource.getConnection();
 				
 //		java.sql establecer que statements poner dentro del driver. Especificar los campos en SELECT para saber encontrarlos
 		
@@ -67,9 +70,9 @@ public class ClienteDAO {
 		
 		Cliente resCliente=null;
 		
-		String url = "jdbc:mysql://localhost/cliente";
+//		String url = "jdbc:mysql://localhost/cliente";
 			
-		Connection conn = DriverManager.getConnection(url, "root", "root");
+		Connection conn = datasource.getConnection();
 					
 		String sql = "SELECT uid, nombre, dni, pin, nomina FROM cliente WHERE dni=?";
 		
