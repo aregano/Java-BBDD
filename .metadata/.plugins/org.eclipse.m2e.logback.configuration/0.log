@@ -2666,3 +2666,127 @@ Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have 
 2018-11-26 14:50:05,315 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2018-11-26 14:50:05,316 [Worker-9: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-11-26 14:50:05,341 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 16:55:27,887 [Worker-46: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 16:55:27,887 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 16:55:27,903 [Worker-46: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 16:55:27,903 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 16:59:39,794 [Worker-44: Launching ClienteDAOTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 16:59:39,794 [Worker-44: Launching ClienteDAOTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 16:59:39,794 [Worker-44: Launching ClienteDAOTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 16:59:39,810 [Worker-44: Launching ClienteDAOTest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:01:35,810 [Worker-48: Launching ClienteDAOTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:01:35,810 [Worker-48: Launching ClienteDAOTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:01:35,825 [Worker-48: Launching ClienteDAOTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:01:35,825 [Worker-48: Launching ClienteDAOTest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:02:25,093 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2018-11-26 17:03:11,635 [Worker-50: Launching ClienteDAOTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:03:11,635 [Worker-50: Launching ClienteDAOTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:03:11,635 [Worker-50: Launching ClienteDAOTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:03:11,651 [Worker-50: Launching ClienteDAOTest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:03:23,620 [Worker-48: Launching ClienteDAOTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:03:23,620 [Worker-48: Launching ClienteDAOTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:03:23,620 [Worker-48: Launching ClienteDAOTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:03:23,636 [Worker-48: Launching ClienteDAOTest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:03:37,940 [Worker-53: Launching ClienteDAOTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:03:37,940 [Worker-53: Launching ClienteDAOTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:03:37,955 [Worker-53: Launching ClienteDAOTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:03:37,962 [Worker-53: Launching ClienteDAOTest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:04:45,806 [Worker-52: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:04:45,806 [Worker-52: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:04:45,806 [Worker-52: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:04:45,821 [Worker-52: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:06:17,020 [Worker-53: Launching ClienteDAOTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:06:17,020 [Worker-53: Launching ClienteDAOTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:06:17,036 [Worker-53: Launching ClienteDAOTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:06:17,036 [Worker-53: Launching ClienteDAOTest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:07:13,941 [Worker-48: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:07:13,941 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:07:13,941 [Worker-48: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:07:13,959 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:08:01,732 [Worker-54: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:08:01,748 [Worker-54: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:08:01,748 [Worker-54: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:08:01,763 [Worker-54: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:08:26,975 [Worker-54: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:08:26,980 [Worker-54: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:08:26,985 [Worker-54: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:08:26,985 [Worker-54: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:09:28,840 [Worker-54: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:09:28,855 [Worker-54: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:09:28,855 [Worker-54: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:09:28,871 [Worker-54: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:09:43,181 [Worker-50: Launching ClienteDAOTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:09:43,185 [Worker-50: Launching ClienteDAOTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:09:43,189 [Worker-50: Launching ClienteDAOTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:09:43,198 [Worker-50: Launching ClienteDAOTest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:09:48,820 [Worker-44: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:09:48,820 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:09:48,820 [Worker-44: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:09:48,836 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:10:43,212 [Worker-47: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:10:43,216 [Worker-47: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:10:43,221 [Worker-47: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:10:43,228 [Worker-47: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:11:09,600 [Worker-47: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:11:09,615 [Worker-47: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:11:09,615 [Worker-47: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:11:09,631 [Worker-47: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:11:29,301 [Worker-52: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:11:29,317 [Worker-52: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:11:29,317 [Worker-52: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:11:29,332 [Worker-52: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:11:56,259 [Worker-53: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:11:56,275 [Worker-53: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:11:56,281 [Worker-53: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:11:56,281 [Worker-53: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:12:28,945 [Worker-50: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:12:28,961 [Worker-50: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:12:28,967 [Worker-50: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:12:28,967 [Worker-50: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:13:15,915 [Worker-53: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:13:15,915 [Worker-53: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:13:15,915 [Worker-53: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:13:15,931 [Worker-53: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:13:33,951 [Worker-48: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:13:33,951 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:13:33,951 [Worker-48: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:13:33,973 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:13:45,274 [Worker-50: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:13:45,290 [Worker-50: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:13:45,290 [Worker-50: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:13:45,290 [Worker-50: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:50:28,500 [Worker-61: Launching ClienteDAOTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:50:28,500 [Worker-61: Launching ClienteDAOTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:50:28,516 [Worker-61: Launching ClienteDAOTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:50:28,516 [Worker-61: Launching ClienteDAOTest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:52:49,732 [Worker-64: Launching Executing test in C__Alvaro_Java-BBDD_AndresBank_ric] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Alvaro\Java-BBDD\AndresBank_ric
+2018-11-26 17:52:49,732 [Worker-64: Launching Executing test in C__Alvaro_Java-BBDD_AndresBank_ric] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B test
+2018-11-26 17:52:51,794 [Worker-64: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:52:51,810 [Worker-64: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:52:51,826 [Worker-64: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:52:51,826 [Worker-64: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:55:58,492 [Worker-64: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:55:58,508 [Worker-64: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:55:58,508 [Worker-64: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:55:58,524 [Worker-64: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-web\AndresBank\src\test\resources
+2018-11-26 17:56:26,181 [Worker-1: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-11-26 17:56:29,606 [Worker-2: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:56:29,622 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:56:29,624 [Worker-2: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:56:29,630 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-web\AndresBank\src\test\resources
+2018-11-26 17:56:30,998 [Worker-2: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:56:31,266 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:56:31,268 [Worker-2: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:56:31,321 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 17:57:06,339 [Worker-3: Launching Executing test in C__Alvaro_Java-BBDD_AndresBank_ric] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Alvaro\Java-BBDD\AndresBank_ric
+2018-11-26 17:57:06,340 [Worker-3: Launching Executing test in C__Alvaro_Java-BBDD_AndresBank_ric] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B test
+2018-11-26 17:57:12,240 [Worker-2: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:57:12,246 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 17:57:12,247 [Worker-2: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 17:57:12,253 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
+2018-11-26 18:00:43,450 [Worker-4: Launching Executing install in C__Alvaro_Java-BBDD_AndresBank_ric] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Alvaro\Java-BBDD\AndresBank_ric
+2018-11-26 18:00:43,454 [Worker-4: Launching Executing install in C__Alvaro_Java-BBDD_AndresBank_ric] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2018-11-26 18:00:48,105 [Worker-2: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 18:00:48,112 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-26 18:00:48,112 [Worker-2: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-26 18:00:48,122 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Alvaro\Java-BBDD\AndresBank_ric\src\test\resources
