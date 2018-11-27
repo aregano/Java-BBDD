@@ -1,0 +1,13 @@
+<web-app version="3.1">
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>EmployeeServlet</servlet-name>
+  	<display-name>EmployeeServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.alvaro.controllers.EmployeeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>EmployeeServlet</servlet-name>
+  	<url-pattern>/employee</url-pattern>
+  </servlet-mapping>
+</web-app>

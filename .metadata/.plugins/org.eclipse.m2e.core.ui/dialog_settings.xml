@@ -36,6 +36,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Alvaro\Java-web\AndresBank"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -48,12 +49,14 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.alvaro"/>
 			<item value="com.alvaro.ProyectoTest"/>
 		</list>
 		<list key="groupId">
 			<item value="com.alvaro"/>
 		</list>
 		<list key="artifactId">
+			<item value="EmployeeApp"/>
 			<item value="ProyectoTest"/>
 		</list>
 		<list key="projectNameTemplate">
