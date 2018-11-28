@@ -6,8 +6,30 @@
   	<description></description>
   	<servlet-class>com.alvaro.controllers.EmployeeServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>RoleServlet</display-name>
+  	<servlet-name>RoleServlet</servlet-name>
+  	<servlet-class>com.alvaro.controllers.RoleServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>TeamServlet</display-name>
+  	<servlet-name>TeamServlet</servlet-name>
+  	<servlet-class>com.alvaro.controllers.TeamServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>EmployeeServlet</servlet-name>
   	<url-pattern>/employee</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RoleServlet</servlet-name>
+  	<url-pattern>/role</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TeamServlet</servlet-name>
+  	<url-pattern>/team</url-pattern>
   </servlet-mapping>
 </web-app>

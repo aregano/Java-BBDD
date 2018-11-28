@@ -1,0 +1,24 @@
+<web-app version="3.1">
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>EmployeeDetailServlet</servlet-name>
+  	<display-name>EmployeeDetailServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.ricardo.servlets.EmployeeDetailServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>TeamsServlet</display-name>
+  	<servlet-name>TeamsServlet</servlet-name>
+  	<servlet-class>com.ricardo.servlets.TeamsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>EmployeeDetailServlet</servlet-name>
+  	<url-pattern>/EmployeeDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TeamsServlet</servlet-name>
+  	<url-pattern>/TeamsServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
